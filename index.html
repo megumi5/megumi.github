@@ -1,93 +1,137 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <title>drop-3</title>
-        <link rel="stylesheet" href="stylesheet.css">
-        <meta name="viewport" contents="width=device-width,initial-scale=1.0">
-        
-    </head>
-    <body>
-        <header class="header">
-            <div class="content-wrapper header-nav">
-                <h1>株式会社しずく</h1> 
-                <nav>
-                    <ul>
-                        <li><a href="#">Top page</a></li>
-                        <li><a href="#">Photos</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Job offer</a></li>
-                        <li><a href="#">Q&A</a></li>
-                    </ul>
-                </nav>               
-            </div>
-        </header>
-        <section class="mainvisual">
-            <img src="IMG_8151.JPG" alt="しずく写真">
-            <h2>tears drops</h2>
-            <div class="bg1"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyaon's Cafe</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+</script>
+
+</head>
+<body>
+    <header class="header">
+        <h1>Nann's Cafe</h1>
+        <section class="hamburger">
+            <a class="nav-button" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>            
         </section>
-        <main>
-            <section class="greeting">
-                <div class="content-wrapper">
-                    <div class="contents">
-                        <figure><img src="IMG_5415.JPG"></figure>
-                        <div class="content">
-                            <h2>しずく写真とは</h2>
-                            <p>花びらの上やタンポポの綿毛に水滴を置き、<br>
-                                背景に花などを置きそれを水滴に映り込ませ撮影した写真です。
-                            </p>
-                        </div>
-                    </div>
-
+        <nav>
+            <ul>
+                <li><a href="#">TOP</a></li>
+                <li><a href="#">店内案内</a></li>
+                <li><a href="#">採用情報</a></li>
+                <li><a href="#">お問合せ</a></li>
+                <li class="phone">123-4567-8900</li>
+            </ul>
+        </nav>
+    </header>
+  
+    
+    <main>
+        <article class="mainvisual"> 
+            <div class="slider">
+                <img src="images/cat1.jpg" width="500" height="300" alt="">
+                <img src="images/cat2.jpg" width="500" height="300" alt="">
+                <img src="images/cat3.jpg" width="500" height="300" alt="">
+                <img src="images/cat4.jpg" width="500" height="300" alt="">
+                <img src="images/cat5.jpg" width="500" height="300" alt="">
                 </div>
+            <h2>癒やされて。</h2>
+        </article>
 
+        <article class="topics">
+            <section class="content-wrapper">
+                <div class="heading">
+                    <h2>TOPICS</h2>
+                </div>
+                <div class="content">
+                    <table>
+                    <tbody>   
+                    <tr>
+                    <th>2020.00.00</th>
+                    <td>タイトルが入ります。</td>
+                    </tr>
+                    <tr>
+                    <th>2020.00.00</th>
+                    <td>タイトルが入ります。</td>
+                    </tr>
+                    <tr>
+                    <th>2020.00.00</th>
+                    <td>タイトルが入ります。</td>
+                    </tr>
+                    <tr>
+                    <th>2020.00.00</th>
+                    <td>タイトルが入ります。</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                    <p class="btn"><a href="#">more</a></p>
+                </div>
             </section>
-            <section class="work">
-                <div class="content wrapper">
-                    <h2>Phtos</h2>
+        </article>
+
+        <article class="institution">
+            <section class="content-wrapper">
+                <div class="content">
+                    <h2>店内案内</h2>
+                    <p>
+                    心より癒される空間でお待ちしております。                    
+                    </p>
+                    <p class="btn"><a href="#">more</a></p>
+                </div>
+            </section>
+        </article>
+
+        <article class="recruit">
+            <section class="content-wrapper">
+                <ul>
+                    <li><a href="#"><figure><img src="images/images-1.jpg"></figure><span>正社員</span></a></li>
+                    <li><a href="#"><figure><img src="images/rekrut-2.jpg"></figure><span>アルバイト</span></a></li>
+                </ul>
+                <h2>採用情報</h2>
+            </section>            
+        </article>
+
+        <article class="contact">
+            <ul>
+                <li><a href="#">お問い合わせ</a></li>
+            </ul>
+        </article>
+
+        <footer class="footer">
+            <section class="content-wrapper">
+                <div class="high">
+                    <h1>Nyann's Cafe</h1>
                     <ul>
-                        <li><a href="#"><figure><img src="IMG_4749.JPG"></figure><h3>Bule drops</h3><p>青いガーベラの花びらの上に水滴をのせて青いカーネーションを写しこませました。</p></a></li>
-                        <li><a href="#"><figure><img src="IMG_0888.JPG "></figure><h3>くるりん</h3><p>クルンと花びらに水滴をのせて花を写しこみました。</p></a></li>
-                        <li><a href="#"><figure><img src="IMG_6807.JPG"></figure><h3>Pink Roses</h3><p>枝に付けた水滴にロマンチックな薔薇を写しこみました。</p></a></li>
+                    <li><a href="#">店内案内</a></li>
+                    <li><a href="#">採用情報</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
                     </ul>
                 </div>
-            </section>
-            <section class="news">
-                <div class="content-wrapper">
-                    <li><a href="#"><time>2020-00-00</time>○○フォトコンテスト授章式</a></li>
-                    <li><a href="#"><time>2020-00-00</time>△△写真展開催〜00日まで</a></li>
-                    <li><a href="#"><time>2020-00-00</time>写真集新刊Deops2発売</a></li>
-                    <li><a href="#"><time>2020-00-00</time>写真集Drops発売中</a></li>
+                <div class="low">
+                〒000-0000<span>東京都○○</span><br>
+                TEL:123-4567-8900    
                 </div>
+                <p>&copy;Nyann's Cafe Co.,Ltd.</p>
             </section>
-            <section class="recruit">
-                <div class="recruit-img"><img src="img/IMG_pink.JPG" alt="雫"></div>
-                    <h2><a href="">Job offer</a></h2>
-                <div class="bg2"></div>
-            </section>
-        </main>  
-        <footer class="footer">
-            <div class="content-wrapper">
-                <div class="address">
-                    <h2>株式会社しずく</h2>
-                    <p>〒000-0000<br>
-                        東京都××××××××××<br>
-                        TEL 01-1234-5678<br>
-                        FAX 01-1234-7890
-                    </p>
-                </div>
-                <ul>
-                    <li><a href="#">Top page</a></li>
-                    <li><a href="#">Phtos</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Job offer</a></li>
-                    <li><a href="#">Q&A</a></li>
-                </ul>
-            </div>
-            <div class="copylight">
-                <p>©︎ sizuku.Co, Ltd. All rights Reserved.</p>
-            </div>
         </footer>
-    </body>
+    </main>    
+</body>
 </html>
+

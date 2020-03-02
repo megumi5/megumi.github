@@ -1,137 +1,90 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nyaon's Cafe</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-
-<script type="text/javascript">
-        $(document).ready(function(){
-            $('.slider').bxSlider({
-                auto: true,
-                pause: 5000,
-            });
-        });
-</script>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progate</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
-    <header class="header">
-        <h1>Nann's Cafe</h1>
-        <section class="hamburger">
-            <a class="nav-button" href="#">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>            
-        </section>
-        <nav>
-            <ul>
-                <li><a href="#">TOP</a></li>
-                <li><a href="#">店内案内</a></li>
-                <li><a href="#">採用情報</a></li>
-                <li><a href="#">お問合せ</a></li>
-                <li class="phone">123-4567-8900</li>
-            </ul>
-        </nav>
-    </header>
-  
-    
-    <main>
-        <article class="mainvisual"> 
-            <div class="slider">
-                <img src="images/cat1.jpg" width="500" height="300" alt="">
-                <img src="images/cat2.jpg" width="500" height="300" alt="">
-                <img src="images/cat3.jpg" width="500" height="300" alt="">
-                <img src="images/cat4.jpg" width="500" height="300" alt="">
-                <img src="images/cat5.jpg" width="500" height="300" alt="">
-                </div>
-            <h2>癒やされて。</h2>
-        </article>
-
-        <article class="topics">
-            <section class="content-wrapper">
-                <div class="heading">
-                    <h2>TOPICS</h2>
-                </div>
-                <div class="content">
-                    <table>
-                    <tbody>   
-                    <tr>
-                    <th>2020.00.00</th>
-                    <td>タイトルが入ります。</td>
-                    </tr>
-                    <tr>
-                    <th>2020.00.00</th>
-                    <td>タイトルが入ります。</td>
-                    </tr>
-                    <tr>
-                    <th>2020.00.00</th>
-                    <td>タイトルが入ります。</td>
-                    </tr>
-                    <tr>
-                    <th>2020.00.00</th>
-                    <td>タイトルが入ります。</td>
-                    </tr>
-                    </tbody>
-                    </table>
-                    <p class="btn"><a href="#">more</a></p>
-                </div>
-            </section>
-        </article>
-
-        <article class="institution">
-            <section class="content-wrapper">
-                <div class="content">
-                    <h2>店内案内</h2>
-                    <p>
-                    心より癒される空間でお待ちしております。                    
-                    </p>
-                    <p class="btn"><a href="#">more</a></p>
-                </div>
-            </section>
-        </article>
-
-        <article class="recruit">
-            <section class="content-wrapper">
-                <ul>
-                    <li><a href="#"><figure><img src="images/images-1.jpg"></figure><span>正社員</span></a></li>
-                    <li><a href="#"><figure><img src="images/rekrut-2.jpg"></figure><span>アルバイト</span></a></li>
-                </ul>
-                <h2>採用情報</h2>
-            </section>            
-        </article>
-
-        <article class="contact">
-            <ul>
-                <li><a href="#">お問い合わせ</a></li>
-            </ul>
-        </article>
-
-        <footer class="footer">
-            <section class="content-wrapper">
-                <div class="high">
-                    <h1>Nyann's Cafe</h1>
-                    <ul>
-                    <li><a href="#">店内案内</a></li>
-                    <li><a href="#">採用情報</a></li>
-                    <li><a href="#">お問い合わせ</a></li>
-                    </ul>
-                </div>
-                <div class="low">
-                〒000-0000<span>東京都○○</span><br>
-                TEL:123-4567-8900    
-                </div>
-                <p>&copy;Nyann's Cafe Co.,Ltd.</p>
-            </section>
-        </footer>
-    </main>    
+  <header>
+    <div class="container">
+      <div class="header-left">
+        <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
+      </div>
+      <span class="fa fa-bars menu-icon"></span>
+      <div class="header-right">
+        <a href="#">レッスン</a>
+        <a href="#">新規登録</a>
+        <a href="#" class="login">ログイン</a>
+      </div>
+    </div>
+  </header>
+  <div class="top-wrapper">
+    <div class="container">
+      <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
+      <p>Progateはオンラインプログラミング学習サービスです。<br>初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
+      <div class="btn-wrapper">
+        <a href="#" class="btn signup">新規登録はこちら</a>
+        <p>or</p>
+        <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
+        <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
+      </div>
+    </div>
+  </div>
+  <div class="lesson-wrapper">
+    <div class="container">
+      <div class="heading">
+        <h2>Learn Where to Get Started!</h2>
+      </div>
+      <div class="lessons">
+        <div class="lesson">
+          <div class="lesson-icon">
+            <img src="https://prog-8.com/images/html/advanced/html.png">
+            <p>HTML & CSS</p>
+          </div>
+          <p class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
+        </div>
+        <div class="lesson">
+          <div class="lesson-icon">
+            <img src="https://prog-8.com/images/html/advanced/jQuery.png">
+            <p>jQuery</p>
+          </div>
+          <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
+        </div>
+        <div class="lesson">
+          <div class="lesson-icon">
+            <img src="https://prog-8.com/images/html/advanced/ruby.png">
+            <p>Ruby</p>
+          </div>
+          <p class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
+        </div>
+        <div class="lesson">
+          <div class="lesson-icon">
+            <img src="https://prog-8.com/images/html/advanced/php.png">
+            <p>PHP</p>
+          </div>
+          <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="message-wrapper">
+    <div class="container">
+      <div class="heading">
+        <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
+        <h3>Let's learn to code, learn to be creative!</h3>
+      </div>
+      <span class="btn message">さっそく開発する</span>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
+      <p>Learn to Code, Learn to be Creative.</p>
+    </div>
+  </footer>
 </body>
 </html>
-
